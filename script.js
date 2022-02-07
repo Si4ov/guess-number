@@ -25,12 +25,12 @@ document.getElementsByTagName("button")[1].addEventListener("click", function(){
     document.getElementsByTagName('body')[0].style.backgroundColor = "red";
     return;
   }
-  document.getElementsByClassName("number")[0].innerText = '?'
+  document.getElementsByClassName("number")[0].innerText = '?';
   document.getElementsByTagName('body')[0].style.backgroundColor = "#222";
   let guess = document.getElementsByTagName("input")[0].value;
     document.getElementsByClassName("message")[0].innerText = 'Start guessing...';
   if (guess === ''){ //NO NUMBER
-    document.getElementsByClassName("message")[0].innerText = 'NO NUMBER!!'
+    document.getElementsByClassName("message")[0].innerText = 'NO NUMBER!!';
   }else if(guess > random){   //LOWER
     document.getElementsByClassName("message")[0].innerText = 'Lower!'
     let score = Number(document.getElementsByTagName("span")[0].innerText) - 1;
