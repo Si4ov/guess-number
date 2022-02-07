@@ -44,7 +44,6 @@ document.getElementsByTagName("button")[1].addEventListener("click", function(){
     if(score > highscore){
      highscore = document.getElementsByClassName('highscore')[0].innerText = score;
     }
-    document.getElementsByClassName("number")[0].innerText = random;
     document.getElementsByClassName("message")[0].innerText = 'Correct number!';
     document.getElementsByTagName('body')[0].style.backgroundColor = "#60b347";
     return;
